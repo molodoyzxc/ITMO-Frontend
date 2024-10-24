@@ -1,4 +1,3 @@
-/* Основные стили для страницы */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -8,8 +7,7 @@ body {
     line-height: 1.6;
 }
 
-/* Стили для заголовка */
-header {
+.header {
     background-color: #2c3e50;
     color: white;
     padding: 20px;
@@ -17,34 +15,36 @@ header {
     border-bottom: 5px solid #2980b9;
 }
 
-header h1 {
+.header__title {
     margin: 0;
     font-size: 2.5em;
 }
 
-/* Стили для навигации */
-nav ul {
+.header__nav {
+    margin-top: 10px;
+}
+
+.header__menu {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+.header__menu-item {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+.header__link {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
 }
 
-nav ul li a:hover {
+.header__link:hover {
     text-decoration: underline;
 }
 
-/* Стили для секции "Обо мне" */
-#about {
+.about {
     background-color: #ecf0f1;
     padding: 20px;
     margin: 20px;
@@ -52,17 +52,17 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-#about h2 {
+.about__title {
+    text-transform: uppercase;
     padding: 0;
     color: #2980b9;
 }
 
-#about p {
+.about__text {
     font-size: 1.1em;
 }
 
-/* Стили для псевдографики */
-#pseudographics{
+.pseudographics {
     background-color: #34495e;
     color: white;
     padding: 15px;
@@ -70,7 +70,7 @@ nav ul li a:hover {
     overflow-x: auto;
 }
 
-#pseudographics pre{
+.pseudographics__content {
     text-align: left;
     margin-left: 30%;
 }
@@ -82,33 +82,38 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.gallery img {
+.gallery__image {
     max-width: 20%;
     height: auto;
     border: 3px solid #2980b9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     margin-left: 100px;
-    margin-right: 100px; 
+    margin-right: 100px;
 }
 
-aside {
+.works__aside {
     background-color: #bdc3c7;
     padding: 10px;
     margin: 20px;
     border-left: 5px solid #2980b9;
 }
 
-article ul {
+.works__text {
+    font-size: 1.1em;
+}
+
+.achievements__list {
     list-style-type: square;
     margin-left: 20px;
 }
 
-article ul li {
+.achievements__list-item {
+    font-weight: 700;
     font-size: 1.1em;
 }
 
-blockquote {
+.quote__content {
     font-style: italic;
     background-color: #ecf0f1;
     padding: 10px;
@@ -116,7 +121,7 @@ blockquote {
     margin: 20px 0;
 }
 
-footer {
+.contacts {
     background-color: #2c3e50;
     color: white;
     text-align: center;
@@ -124,13 +129,13 @@ footer {
     margin-top: 40px;
 }
 
-footer p {
+.contacts__text {
     margin: 0;
 }
 
-code {
+.code-example__content {
     margin-left: 2%;
-    background-color:  black;
+    background-color: black;
     color: white;
 }
 
