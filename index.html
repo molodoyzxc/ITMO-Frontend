@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title">Портфолио Екатерины</h1>
-        <hr class="header__line">
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#about" class="header__link">Обо мне</a></li>
-                <li class="header__menu-item"><a href="#works" class="header__link">Работы</a></li>
-                <li class="header__menu-item"><a href="#contacts" class="header__link">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <section id="about" class="about">
-            <h2 class="about__title">Информация обо мне</h2>
-            <article class="about__article">
-                <p class="about__text"><strong>Меня зовут Екатерина</strong>. Я <em>фотограф</em>, и вот некоторые из моих работ.</p>
-                <p class="about__text">Я работаю профессиональным фотографом более 10 лет, специализируюсь на портретах.</p>
-            </article>
-        </section>
+<header class="header">
+    <h1 class="header__title">Портфолио Екатерины</h1>
+    <hr class="header__line">
+    <nav class="header__nav">
+        <ul class="header__menu">
+            <li class="header__menu-item"><a href="#about" class="header__link">Обо мне</a></li>
+            <li class="header__menu-item"><a href="#works" class="header__link">Работы</a></li>
+            <li class="header__menu-item"><a href="#contacts" class="header__link">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section id="about" class="about">
+        <h2 class="about__title">Информация обо мне</h2>
+        <article class="about__article">
+            <p class="about__text"><strong>Меня зовут Екатерина</strong>. Я <em>фотограф</em>, и вот некоторые из моих работ.</p>
+            <p class="about__text">Я работаю профессиональным фотографом более 10 лет, специализируюсь на портретах.</p>
+        </article>
+    </section>
 
-        <section class="pseudographics">
-            <h2 class="pseudographics__title">Псевдографика</h2>
-            <pre class="pseudographics__content">
+    <section class="pseudographics">
+        <h2 class="pseudographics__title">Псевдографика</h2>
+        <pre class="pseudographics__content">
                 ____________________$$$$$$$$$$
                 _________________$$$__________$$$
                 _______________$$________________$$__________$$$
@@ -60,48 +60,78 @@
                 ____________$$$__________________$$_____________$ 
                 _______________$$$$$$$$$$$$$$$$$$
             </pre>
-        </section>
+    </section>
 
-        <section id="works" class="works">
-            <h2 class="works__title">Работы</h2>
-            <aside class="works__aside">
-                <p class="works__text">Мой любимый жанр фотографии: портрет.</p>
-            </aside>
-            <div class="gallery">
-                <img src="photo_2024-08-09_12-45-12.jpg" alt="Котик 1" class="gallery__image">
-                <img src="photo_2024-09-17_22-51-45.jpg" alt="Котик 2" class="gallery__image">
-            </div>
-        </section>
+    <section id="works" class="works">
+        <h2 class="works__title">Работы</h2>
+        <aside class="works__aside">
+            <p class="works__text">Мой любимый жанр фотографии: портрет.</p>
+        </aside>
+        <div class="gallery">
+            <img src="photo_2024-08-09_12-45-12.jpg" alt="Котик 1" class="gallery__image">
+            <img src="photo_2024-09-17_22-51-45.jpg" alt="Котик 2" class="gallery__image">
+        </div>
+    </section>
 
-        <section class="achievements">
-            <h2 class="achievements__title">Мои достижения</h2>
-            <article class="achievements__article">
-                <ul class="achievements__list">
-                    <li class="achievements__list-item">10 лет опыта работы фотографом</li>
-                    <li class="achievements__list-item">Участвовала в 5 выставках</li>
-                    <li class="achievements__list-item">Сотрудничество с 20 известными брендами</li>
-                </ul>
-            </article>
-        </section>
+    <section class="achievements">
+        <h2 class="achievements__title">Мои достижения</h2>
+        <article class="achievements__article">
+            <ul class="achievements__list">
+                <li class="achievements__list-item">10 лет опыта работы фотографом</li>
+                <li class="achievements__list-item">Участвовала в 5 выставках</li>
+                <li class="achievements__list-item">Сотрудничество с 20 известными брендами</li>
+            </ul>
+        </article>
+    </section>
+    <section class="table-section">
+        <h2 class="table-section__title">Пример таблицы</h2>
+        <div class="table-section__container">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Описание</th>
+                    <th>Год</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Работа 1</td>
+                    <td>Описание работы 1</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Работа 2</td>
+                    <td>Описание работы 2</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Работа 3</td>
+                    <td>Описание работы 3</td>
+                    <td>2022</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="code-example">
+        <h2 class="code-example__title">Пример кода</h2>
+        <code class="code-example__content">
+            print('Hello world')
+        </code>
+    </section>
 
-        <section class="code-example">
-            <h2 class="code-example__title">Пример кода</h2>
-            <code class="code-example__content">
-                print('Hello world')
-            </code>
-        </section>
+    <section class="quote">
+        <h2 class="quote__title">Моя цитата</h2>
+        <blockquote class="quote__content">
+            "Думать надо не головой а работать 12 часов в сутки."<br>
+            Успех = Работа<sup>2</sup> + Работать<sub>3</sub>
+        </blockquote>
+    </section>
+</main>
 
-        <section class="quote">
-            <h2 class="quote__title">Моя цитата</h2>
-            <blockquote class="quote__content">
-                "Думать надо не головой а работать 12 часов в сутки."<br>
-                Успех = Работа<sup>2</sup> + Работать<sub>3</sub>
-            </blockquote>
-        </section>
-    </main>
-
-    <footer id="contacts" class="contacts">
-        <p class="contacts__text">Контакты: tg: 123</p>
-    </footer>
+<footer id="contacts" class="contacts">
+    <p class="contacts__text">Контакты: tg: 123</p>
+</footer>
 </body>
 </html>
