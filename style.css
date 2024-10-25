@@ -184,3 +184,16 @@ body {
         max-width: 150px;
     }
 }
+
+/* Интерактивные стили для меню */
+.header__link:hover {
+    background-color: #2980b9;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header__link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
