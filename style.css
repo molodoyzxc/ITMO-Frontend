@@ -41,10 +41,6 @@ body {
     font-size: 1.2em;
 }
 
-.header__link:hover {
-    text-decoration: underline;
-}
-
 .about {
     background-color: #ecf0f1;
     padding: 20px;
@@ -76,7 +72,7 @@ body {
     text-align: center;
 }
 
-.pseudographics__title{
+.pseudographics__title {
     text-align: left;
 }
 
@@ -163,15 +159,18 @@ body {
     display: table;
 }
 
-.table th, .table td {
+.table th {
     padding: 10px;
     border: 1px solid #bdc3c7;
     text-align: left;
 }
 
-.table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+.table td {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    text-align: left;
 }
+
 
 @media screen and (max-width: 768px) {
     .header__menu {
@@ -185,7 +184,6 @@ body {
     }
 }
 
-/* Интерактивные стили для меню */
 .header__link:hover {
     background-color: #2980b9;
     color: white;
@@ -196,4 +194,25 @@ body {
 .header__link.active {
     font-weight: bold;
     text-decoration: underline;
+}
+
+.generated-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.generated-table th, .generated-table td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    text-align: center;
+}
+
+.generated-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.generated-table td {
+    background-color: #ecf0f1;
 }
