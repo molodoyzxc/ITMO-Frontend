@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    MicroModal.init();
+
+    const pseudoGraphics = document.querySelector('.pseudographics__content');
+    pseudoGraphics.addEventListener('click', () => {
+        MicroModal.show('modal-1');
+    });
+
     new Swiper('.swiper-container', {
         loop: true,
         centeredSlides: true,
@@ -23,11 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
-
-(function() {
-    window.addEventListener('load', function() {
+(function () {
+    window.addEventListener('load', function () {
         const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
         const loadTimeElement = document.getElementById('load-time');
         if (loadTimeElement) {

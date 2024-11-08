@@ -291,3 +291,57 @@ body {
     z-index: 10;
     cursor: pointer;
 }
+
+.micromodal-slide {
+    display: none;
+}
+
+.micromodal-slide.is-open {
+    display: block;
+}
+
+.micromodal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.micromodal-container {
+    max-width: 500px;
+    margin: 5vh auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.micromodal-close {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.micromodal-slide.is-open .micromodal-container {
+    -webkit-animation: micromodal-slide-in 0.3s ease-out;
+    animation: micromodal-slide-in 0.3s ease-out;
+}
+
+@keyframes micromodal-slide-in {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -7,9 +7,10 @@
     <meta name="keywords" content="портфолио, фотографии, галерея, фотограф Екатерина">
     <title>Портфолио Екатерины</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../scripts/main.js" defer></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -30,7 +31,8 @@
     <section id="about" class="about">
         <h2 class="about__title">Информация обо мне</h2>
         <article class="about__article">
-            <p class="about__text"><strong>Меня зовут Екатерина</strong>. Я <em>фотограф</em>, и вот некоторые из моих работ.</p>
+            <p class="about__text"><strong>Меня зовут Екатерина</strong>. Я <em>фотограф</em>, и вот некоторые из моих
+                работ.</p>
             <p class="about__text">Я работаю профессиональным фотографом более 10 лет, специализируюсь на портретах.</p>
         </article>
     </section>
@@ -68,6 +70,23 @@
             </pre>
     </section>
 
+    <div class="micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="micromodal-overlay" tabindex="-1" data-micromodal-close>
+            <div class="micromodal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header>
+                    <h2 id="modal-1-title">Информация</h2>
+                    <button class="micromodal-close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main>
+                    <p>Псевдографика шрека.</p>
+                </main>
+                <footer>
+                    <button data-micromodal-close>Закрыть</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
     <section id="works" class="works">
         <h2 class="works__title">Работы</h2>
         <aside class="works__aside">
@@ -75,12 +94,12 @@
         </aside>
         <div class="swiper-container gallery">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../media/photo_2024-08-09_12-45-12.jpg" alt="Фото 1" /></div>
-                <div class="swiper-slide"><img src="../media/photo_2024-09-17_22-51-45.jpg" alt="Фото 2" /></div>
-                <div class="swiper-slide"><img src="../media/cat1.jpeg" alt="Фото 3" /></div>
-                <div class="swiper-slide"><img src="../media/cat2.webp" alt="Фото 4" /></div>
-                <div class="swiper-slide"><img src="../media/cat3.jpeg" alt="Фото 5" /></div>
-                <div class="swiper-slide"><img src="../media/cat4.jpeg" alt="Фото 6" /></div>
+                <div class="swiper-slide"><img src="../media/photo_2024-08-09_12-45-12.jpg" alt="Фото 1"/></div>
+                <div class="swiper-slide"><img src="../media/photo_2024-09-17_22-51-45.jpg" alt="Фото 2"/></div>
+                <div class="swiper-slide"><img src="../media/cat1.jpeg" alt="Фото 3"/></div>
+                <div class="swiper-slide"><img src="../media/cat2.webp" alt="Фото 4"/></div>
+                <div class="swiper-slide"><img src="../media/cat3.jpeg" alt="Фото 5"/></div>
+                <div class="swiper-slide"><img src="../media/cat4.jpeg" alt="Фото 6"/></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
