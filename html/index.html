@@ -7,6 +7,8 @@
     <meta name="keywords" content="портфолио, фотографии, галерея, фотограф Екатерина">
     <title>Портфолио Екатерины</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../scripts/main.js" defer></script>
 </head>
 <body>
@@ -71,9 +73,17 @@
         <aside class="works__aside">
             <p class="works__text">Мой любимый жанр фотографии: портрет.</p>
         </aside>
-        <div class="gallery">
-            <img src="../media/photo_2024-08-09_12-45-12.jpg" alt="Котик 1" class="gallery__image">
-            <img src="../media/photo_2024-09-17_22-51-45.jpg" alt="Котик 2" class="gallery__image">
+        <div class="swiper-container gallery">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../media/photo_2024-08-09_12-45-12.jpg" alt="Фото 1" /></div>
+                <div class="swiper-slide"><img src="../media/photo_2024-09-17_22-51-45.jpg" alt="Фото 2" /></div>
+                <div class="swiper-slide"><img src="../media/cat1.jpeg" alt="Фото 3" /></div>
+                <div class="swiper-slide"><img src="../media/cat2.webp" alt="Фото 4" /></div>
+                <div class="swiper-slide"><img src="../media/cat3.jpeg" alt="Фото 5" /></div>
+                <div class="swiper-slide"><img src="../media/cat4.jpeg" alt="Фото 6" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
