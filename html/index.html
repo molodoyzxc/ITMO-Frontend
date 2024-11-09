@@ -6,7 +6,11 @@
     <meta name="description" content="Портфолио фотографа Екатерины с галереей работ">
     <meta name="keywords" content="портфолио, фотографии, галерея, фотограф Екатерина">
     <title>Портфолио Екатерины</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../scripts/main.js" defer></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -14,9 +18,12 @@
     <hr class="header__line">
     <nav class="header__nav">
         <ul class="header__menu">
-            <li class="header__menu-item"><a href="#about" class="header__link">Обо мне</a></li>
-            <li class="header__menu-item"><a href="#works" class="header__link">Работы</a></li>
-            <li class="header__menu-item"><a href="#contacts" class="header__link">Контакты</a></li>
+            <li class="header__menu-item"><a href="index.html" class="header__link">Главная</a></li>
+            <li class="header__menu-item"><a href="about.html" class="header__link">Обо мне</a></li>
+            <li class="header__menu-item"><a href="works.html" class="header__link">Работы</a></li>
+            <li class="header__menu-item"><a href="contacts.html" class="header__link">Контакты</a></li>
+            <li class="header__menu-item"><a href="constructor.html" class="header__link">Конструктор</a></li>
+            <li class="header__menu-item"><a href="users.html" class="header__link">Комментарии</a></li>
         </ul>
     </nav>
 </header>
@@ -24,7 +31,8 @@
     <section id="about" class="about">
         <h2 class="about__title">Информация обо мне</h2>
         <article class="about__article">
-            <p class="about__text"><strong>Меня зовут Екатерина</strong>. Я <em>фотограф</em>, и вот некоторые из моих работ.</p>
+            <p class="about__text"><strong>Меня зовут Екатерина</strong>. Я <em>фотограф</em>, и вот некоторые из моих
+                работ.</p>
             <p class="about__text">Я работаю профессиональным фотографом более 10 лет, специализируюсь на портретах.</p>
         </article>
     </section>
@@ -50,26 +58,51 @@
                 _____$____$________$___$_________$$$________$
                 _____$___$__$_____$___$_____________$_______$
                 _____$_______$$$$$$$$$$$$$$$$$$$$$__________$
-                _____$______________________________________$ 
+                _____$______________________________________$
                 ______$________$$$$$$$$$$$$$$_______________$
                 ______$____________$$$$$$___________________$$
-                _______$______________________________________$ 
-                ___$$$$$$______________________________________$ 
-                $$$______$_____________________________________$ 
+                _______$______________________________________$
+                ___$$$$$$______________________________________$
+                $$$______$_____________________________________$
                 __________$$_______________________$$___________$
-                ____________$$$__________________$$_____________$ 
+                ____________$$$__________________$$_____________$
                 _______________$$$$$$$$$$$$$$$$$$
             </pre>
     </section>
+
+    <div class="micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="micromodal-overlay" tabindex="-1" data-micromodal-close>
+            <div class="micromodal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header>
+                    <h2 id="modal-1-title">Информация</h2>
+                    <button class="micromodal-close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main>
+                    <p>Псевдографика шрека.</p>
+                </main>
+                <footer>
+                    <button data-micromodal-close>Закрыть</button>
+                </footer>
+            </div>
+        </div>
+    </div>
 
     <section id="works" class="works">
         <h2 class="works__title">Работы</h2>
         <aside class="works__aside">
             <p class="works__text">Мой любимый жанр фотографии: портрет.</p>
         </aside>
-        <div class="gallery">
-            <img src="photo_2024-08-09_12-45-12.jpg" alt="Котик 1" class="gallery__image">
-            <img src="photo_2024-09-17_22-51-45.jpg" alt="Котик 2" class="gallery__image">
+        <div class="swiper-container gallery">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../media/photo_2024-08-09_12-45-12.jpg" alt="Фото 1"/></div>
+                <div class="swiper-slide"><img src="../media/photo_2024-09-17_22-51-45.jpg" alt="Фото 2"/></div>
+                <div class="swiper-slide"><img src="../media/cat1.jpeg" alt="Фото 3"/></div>
+                <div class="swiper-slide"><img src="../media/cat2.webp" alt="Фото 4"/></div>
+                <div class="swiper-slide"><img src="../media/cat3.jpeg" alt="Фото 5"/></div>
+                <div class="swiper-slide"><img src="../media/cat4.jpeg" alt="Фото 6"/></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
@@ -110,6 +143,21 @@
                     <td>Описание работы 3</td>
                     <td>2022</td>
                 </tr>
+                <tr>
+                    <td>Работа 4</td>
+                    <td>Описание работы 4</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Работа 5</td>
+                    <td>Описание работы 5</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Работа 6</td>
+                    <td>Описание работы 6</td>
+                    <td>2022</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -129,9 +177,9 @@
         </blockquote>
     </section>
 </main>
-
-<footer id="contacts" class="contacts">
+<footer class="contacts">
     <p class="contacts__text">Контакты: tg: 123</p>
+    <p id="load-time"></p>
 </footer>
 </body>
 </html>
